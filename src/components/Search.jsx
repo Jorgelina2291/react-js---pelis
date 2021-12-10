@@ -20,14 +20,14 @@ export function Search() {
           type="text"
           value={search ?? ""}
           autoFocus
-          placeholder="Title"
-          aria-label="Search Movies"
+          placeholder="buscar"
+          aria-label="Search pelis"
           onChange={(e) => {
             const value = e.target.value;
             history.push("/?search=" + value);
           }}
         />
-        <FaSearch size={20} color="black" className={styles.searchButton} />
+        <FaSearch size={20} color="blue" className={styles.searchButton} />
       </div>
     </form>
   );
